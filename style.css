@@ -33,9 +33,22 @@ nav {
     width:100%;
     height:100%;
 }
+.section-introduction{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.section-introduction img{
+    width:50%;
+    border-radius:5px;
+}
 a{
     text-decoration:none;
     color:black;
+}
+p{
+    padding:10px;
 }
 header {
     display:flex;
@@ -52,6 +65,7 @@ footer{
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
+    gap:10px;
 }
 main{
     max-width:1000px;
