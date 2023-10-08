@@ -1,10 +1,19 @@
+<!--TODO-LIST
+*ajouter un formulaire de contact
+    contenant:
+    *date d'arrivée
+    *date de départ
+    *nom
+    *adresse mail
+    *nombre de personnes
+-->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Baobab du lac</title>
+    <title>Réserver - Le Baobab du lac</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,32 +49,47 @@
 </header>
 <main>
         <h1>Réserver</h1>
-    <section class="section-introduction">
-        <p>
-            Situé à 200 mètres du rac rose et à 2 kilometres de
-            l'océan, Franck vous acceuille dans un cadre unique au milieu
-            d'un verger à l'ombre d'un magnifique baobab estimé
-            à 800 ans. <br>
-           La chambre est équipée d' un lit double de 160x200. Un 
-            ventilateur y est à disposition. La climatisation vous 
-            est proposée en supplément. <br>
-            Le site est idéal pour les voyageurs souhaitant explorer
-            la presqu'ile du cap vert.<br>
-         
-            Pour plus d'informations, téléphonnez au : 221 77 562 30  07
-        </p>
-        <img src="images/baobab-1.jpg" alt="photo du baobab vu depuis la terrasse du logement">
+        <section>
+        <form method="get" action="">
+
+            <div class="elementFormulaire">
+                <!-- *nom -->
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Ex : Paul">
+            </div>
+
+            <div class="elementFormulaire">
+                <!-- *nombre de personnes -->
+                <label for="nombrePersonnes">Combien serez-vous ?</label>
+                <input type="number" name="nombrePersonnes" id="nombrePersonnes">
+            </div>
+
+            <div class="elementFormulaire">
+                <!-- *date d'arrivée -->
+                <label for="dateArrivee">Date d'arrivée</label>
+                <input type="date" name="dateArrivee" id="dateArrivee">
+            </div>
+
+            <div class="elementFormulaire">
+                <!-- *date de départ -->
+                <label for="dateDepart">Date de départ</label>
+                <input type="date" name="dateDepart" id="dateDepart">
+            </div>
+
+            <div class="elementFormulaire">
+                <!-- *remarques -->
+                <label for="remarques">Remarques éventuelles</label>
+                <textarea id="remarques" name="remarques" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="elementFormulaire">
+                <!-- *adresse mail -->
+                <label for="email">Votre adresse email</label>
+                <input type="email" name="email" id="email">
+            </div>
             
-    </section>
-    <section class="section-introduction">
-        <img src="images/sdb-1.jpg" alt="photo de la salle de bain du logement">
-        <p>
-        l'appartement dispose d'une salle de bains douche à l'
-            italienne avec eau chaude, d'une cuisine équipée de 
-            vaisselle, d'un réfrigirateur et d'une gazinière.<br>
-            
-        </p>
-    </section>
+        </form>
+        </section>
 </main>
 <footer>
 
