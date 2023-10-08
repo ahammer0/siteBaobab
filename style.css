@@ -17,7 +17,7 @@ nav {
 .elementMenu{
     /*margin:30px;*/
     background-color:var(--color-primary);
-    padding:20px;
+    padding:10px;
     border-radius:5px;
 }
 .elementMenu:hover{
@@ -57,6 +57,14 @@ header {
     align-items:center;
     background-color:var(--color-secondary);
     padding:20px;
+    background-image:url("images/banniere.jpg");
+    background-position:center top 900px;
+    margin-bottom:30px;
+}
+header h1{
+    padding:20px;
+    border-radius:5px;
+    background-color:var(--color-primary);
 }
 footer{
     background-color:var(--color-secondary);
@@ -71,4 +79,5 @@ main{
     max-width:1000px;
     margin:auto;
     background-color:var(--color-tertiary);
+    margin-bottom:30px;
 }
