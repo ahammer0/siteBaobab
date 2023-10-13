@@ -113,6 +113,10 @@ h1{
     border-radius:5px;
 
 }
+.lieuCarte{
+    margin:auto;
+    display:block;
+}
 .gallerie{
     width:400px;
     height:400px;

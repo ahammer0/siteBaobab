@@ -13,6 +13,7 @@ function actualiserAffichage(noElement, photos){
         }
     }
 }
+actualiserAffichage(elementAffiche,photos);
 //gestion du bouton suivant
 btnSuivant.addEventListener("click",()=>{
     if (elementAffiche<photos.length-1){
