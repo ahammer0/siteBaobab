@@ -113,4 +113,18 @@ h1{
     border-radius:5px;
 
 }
-
+.gallerie{
+    width:400px;
+    height:400px;
+    overflow:hidden;
+    margin:auto;
+}
+.gallerie img{
+    width:400px;
+}
+.gallerie-hidden{
+    display:none;
+}
+.gallerie-show{
+    display:initial;
+}
