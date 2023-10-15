@@ -1,5 +1,5 @@
 <!--TODO-LIST
-*ajouter une gallerie photo interactive
+*ajouter animation sur suivant et précédant
 *ajouter un texte de description du cadre
 -->
 <!DOCTYPE html>
@@ -47,17 +47,28 @@
         <section>
             <h1>Le lieu</h1>
         </section>
+        <section>
+                <div class="gallerie">
+                    <!-- <button type="button" id="gallerie-btnSuivant">Photo Suivante</button> -->
+                    <!-- <button type="button" id="gallerie-btnPrecedant">Photo Précédante</button> -->
+                    <div class="gallerie-boutons">
+                        <div id="gallerie-btnPrecedant"><img src="images/icone-flecheAGauche.png" alt=""></div>
+                        <div id="gallerie-btnSuivant"><img src="images/icone-flecheADroite.png" alt=""></div>
+                        <div class="gallerie-puces">
+                            <p><span class="gallerie-puceActive">&bull;</span><span class="gallerie-puceNotActive">&bull;</span></p>
+                        </div>
+                    </div>
+                    <div class="gallerie-images">
+                        <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
+                        <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
+                        <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
+                        <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
+                        <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
+                    </div>
+                </div>
+        </section>
         <section >
             <iframe class="lieuCarte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.2204302574273!2d-17.251173466092016!3d14.832822182955692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a1d3ad0a78f1%3A0x97788f5f78d6b5d9!2sBaobab%20du%20lac%20rose!5e0!3m2!1sfr!2sfr!4v1696794223556!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="gallerie">
-            <button type="button" id="gallerie-btnSuivant">Photo Suivante</button>
-            <button type="button" id="gallerie-btnPrecedant">Photo Précédante</button>
-            <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
-            <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
-            <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
-            <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
-            <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
         </section>
 </main>
     <footer>
