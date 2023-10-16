@@ -1,5 +1,6 @@
-const btnSuivant=document.getElementById("gallerie-btnSuivant");
-const btnPrecedant=document.getElementById("gallerie-btnPrecedant");
+const btnSuivant=document.querySelector(".gallerie-btnSuivant");
+const btnPrecedant=document.querySelector(".gallerie-btnPrecedant");
+
 
 const photos=document.querySelectorAll(".imageGallerie");
 let elementAffiche=0;
@@ -38,4 +39,25 @@ btnPrecedant.addEventListener("click",()=>{
         elementAffiche--;
     }
     actualiserAffichage(elementAffiche,photos);
+});
+
+//precedant en appuyant sur n
+//
+const gallerie=document.querySelector(".gallerie");
+gallerie.addEventListener("keydown",(e)=>{
+    if(e.key==="n"){
+        if (elementAffiche<photos.length-1){
+            elementAffiche++;
+        }
+        actualiserAffichage(elementAffiche,photos);
+    }
+});
+//precedant en appuyant sur p
+gallerie.addEventListener("keydown",(e)=>{
+    if(e.key==="p"){
+        if(elementAffiche>0){
+            elementAffiche--;
+        }
+        actualiserAffichage(elementAffiche,photos);
+    }
 });

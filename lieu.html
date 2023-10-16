@@ -1,6 +1,7 @@
 <!--TODO-LIST
 *ajouter animation sur suivant et précédant
 *ajouter un texte de description du cadre
+*passer tout le site sur une seule page
 -->
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,79 +14,80 @@
     <script src="script.js" defer></script>
 </head>
 
-<header>
-    <a href="index.html">
-        <div class="logoPrincipal">
-        <img src="images/logos/baobab-logo.png" alt="logo baobab">
-        </div>
-    </a>
-    <h1>Le Baobab du lac</h1>
-    <nav>
+<body>
+    <header>
         <a href="index.html">
-            <div class="elementMenu">
-                Accueil
+            <div class="logoPrincipal">
+            <img src="images/logos/baobab-logo.png" alt="logo baobab">
             </div>
         </a>
-        <a href="lieu.html">
-            <div class="elementMenu">
-                Le lieu
-            </div>
-        </a>
-        <a href="tarifs.html">
-            <div class="elementMenu">
-                Tarifs
-            </div>
-        </a>
-        <a href="reserver.html">
-            <div class="elementMenu">
-                Réserver
-            </div>
-        </a>
-    </nav>
-</header>
-<main>
-        <section>
-            <h1>Le lieu</h1>
-        </section>
-        <section>
-                <div class="gallerie">
-                    <!-- <button type="button" id="gallerie-btnSuivant">Photo Suivante</button> -->
-                    <!-- <button type="button" id="gallerie-btnPrecedant">Photo Précédante</button> -->
-                    <div class="gallerie-boutons">
-                        <div id="gallerie-btnPrecedant"><img src="images/icone-flecheAGauche.png" alt=""></div>
-                        <div id="gallerie-btnSuivant"><img src="images/icone-flecheADroite.png" alt=""></div>
-                        <div class="gallerie-puces">
-                            <p><span class="gallerie-puceActive">&bull;</span><span class="gallerie-puceNotActive">&bull;</span></p>
+        <h1>Le Baobab du lac</h1>
+        <nav>
+            <a href="index.html">
+                <div class="elementMenu">
+                    Accueil
+                </div>
+            </a>
+            <a href="lieu.html">
+                <div class="elementMenu">
+                    Le lieu
+                </div>
+            </a>
+            <a href="tarifs.html">
+                <div class="elementMenu">
+                    Tarifs
+                </div>
+            </a>
+            <a href="reserver.html">
+                <div class="elementMenu">
+                    Réserver
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main>
+            <section>
+                <h1>Le lieu</h1>
+            </section>
+            <section>
+                    <div class="gallerie">
+                        <div class="gallerie-boutons">
+                            <button class="gallerie-btn gallerie-btnPrecedant"><img src="images/icone-flecheAGauche.png" alt=""></button>
+                            <button class="gallerie-btn gallerie-btnSuivant"><img src="images/icone-flecheADroite.png" alt=""></button>
+                            <div class="gallerie-puces">
+                                <p><span class="gallerie-puceActive">&bull;</span><span class="gallerie-puceNotActive">&bull;</span></p>
+                            </div>
+                        </div>
+                        <div class="gallerie-images">
+                            <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
+                            <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
+                            <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
+                            <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
+                            <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
                         </div>
                     </div>
-                    <div class="gallerie-images">
-                        <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
-                        <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
-                        <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
-                        <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
-                        <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
-                    </div>
-                </div>
-        </section>
-        <section >
-            <iframe class="lieuCarte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.2204302574273!2d-17.251173466092016!3d14.832822182955692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a1d3ad0a78f1%3A0x97788f5f78d6b5d9!2sBaobab%20du%20lac%20rose!5e0!3m2!1sfr!2sfr!4v1696794223556!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-</main>
-    <footer>
-
-    <div>
-        <img src="images/logos/tel-icon.png" alt="logo tel"> (00)221 77 562 30 07
-    </div>
-
-    <a href="">
+            </section>
+            
+            <section >
+                <iframe class="lieuCarte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.2204302574273!2d-17.251173466092016!3d14.832822182955692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a1d3ad0a78f1%3A0x97788f5f78d6b5d9!2sBaobab%20du%20lac%20rose!5e0!3m2!1sfr!2sfr!4v1696794223556!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+    </main>
+        <footer>
+    
         <div>
-            <img src="images/logos/facebook-icon.png" alt="logo facebook">
+            <img src="images/logos/tel-icon.png" alt="logo tel"> (00)221 77 562 30 07
         </div>
-    </a>
-    <a href="">
-        <div>
-            <img src="images/logos/airbnb-icon.png" alt="logo airbnb">
-        </div>
-    </a>
-</footer>
+    
+        <a href="">
+            <div>
+                <img src="images/logos/facebook-icon.png" alt="logo facebook">
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <img src="images/logos/airbnb-icon.png" alt="logo airbnb">
+            </div>
+        </a>
+    </footer>
+</body>
 </html>

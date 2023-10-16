@@ -8,84 +8,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Baobab du lac</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
-<header>
-    <a href="index.html">
-        <div class="logoPrincipal">
-        <img src="images/logos/baobab-logo.png" alt="logo baobab">
-        </div>
-    </a>
-    <h1>Le Baobab du lac</h1>
-    <nav>
+<body>
+    
+    <header>
         <a href="index.html">
-            <div class="elementMenu">
-                Accueil
+            <div class="logoPrincipal">
+            <img src="images/logos/baobab-logo.png" alt="logo baobab">
             </div>
         </a>
-        <a href="lieu.html">
-            <div class="elementMenu">
-                Le lieu
-            </div>
-        </a>
-        <a href="tarifs.html">
-            <div class="elementMenu">
-                Tarifs
-            </div>
-        </a>
-        <a href="reserver.html">
-            <div class="elementMenu">
-                Réserver
-            </div>
-        </a>
-    </nav>
-</header>
-<main>
-    <section class="section-introduction">
-        <div>
-            <h1>Introduction</h1>
-            <p>
-                Situé à 200 mètres du rac rose et à 2 kilometres de
-                l'océan, Franck vous acceuille dans un cadre unique au milieu
-                d'un verger à l'ombre d'un magnifique baobab estimé
-                à 800 ans. <br>
-               La chambre est équipée d' un lit double de 160x200. Un 
-                ventilateur y est à disposition. La climatisation vous 
-                est proposée en supplément. <br>
-                Le site est idéal pour les voyageurs souhaitant explorer
-                la presqu'ile du cap vert.<br>
-             
-                Pour plus d'informations, téléphonnez au : 221 77 562 30  07
-            </p>
-        </div>
-        <img src="images/baobab-1.jpg" alt="photo du baobab vu depuis la terrasse du logement">
+        <h1>Le Baobab du lac</h1>
+        <nav>
+            <a href="index.html">
+                <div class="elementMenu">
+                    Accueil
+                </div>
+            </a>
+            <a href="#lieu">
+                <div class="elementMenu">
+                    Le lieu
+                </div>
+            </a>
+            <a href="#prix">
+                <div class="elementMenu">
+                    Tarifs
+                </div>
+            </a>
+            <a href="#prix">
+                <div class="elementMenu">
+                    Réserver
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionIntroduction">
             
-    </section>
-    <section class="section-introduction">
-        <img src="images/sdb-1.jpg" alt="photo de la salle de bain du logement">
-        <p>
-        l'appartement dispose d'une salle de bains douche à l'
-            italienne avec eau chaude, d'une cuisine équipée de 
-            vaisselle, d'un réfrigirateur et d'une gazinière.<br>
-            
-        </p>
-    </section>
-</main>
-<footer>
-
-    <div>
-        <img src="images/logos/tel-icon.png" alt="logo tel"> (00)221 77 562 30 07
-    </div>
-
-    <a href="">
+                    <article class="sectionIntroduction__article">
+                        <h1>Introduction</h1>
+                    </article>
+            <article class="sectionIntroduction__article">
+                <div>
+                    <p>
+                        Situé à 200 mètres du rac rose et à 2 kilometres de
+                        l'océan, Franck vous acceuille dans un cadre unique au milieu
+                        d'un verger à l'ombre d'un magnifique baobab estimé
+                        à 800 ans. <br>
+                       La chambre est équipée d' un lit double de 160x200. Un 
+                        ventilateur y est à disposition. La climatisation vous 
+                        est proposée en supplément. <br>
+                        Le site est idéal pour les voyageurs souhaitant explorer
+                        la presqu'ile du cap vert.<br>
+                     
+                        Pour plus d'informations, téléphonnez au : 221 77 562 30  07
+                    </p>
+                </div>
+                <img src="images/baobab-1.jpg" alt="photo du baobab vu depuis la terrasse du logement" class="sectionIntroduction__img">
+            </article>
+                
+            <article class="sectionIntroduction__article">
+                <img src="images/sdb-1.jpg" alt="photo de la salle de bain du logement" class="sectionIntroduction__img">
+                <p>
+                l'appartement dispose d'une salle de bains douche à l'
+                    italienne avec eau chaude, d'une cuisine équipée de 
+                    vaisselle, d'un réfrigirateur et d'une gazinière.<br>
+                    
+                </p>
+            </article>
+        </section>
+            <section id="lieu">
+                <article>
+                    <h1>Le lieu</h1>
+                        <div class="gallerie">
+                            <div class="gallerie-boutons">
+                                <button class="gallerie-btn gallerie-btnPrecedant"><img src="images/icone-flecheAGauche.png" alt=""></button>
+                                <button class="gallerie-btn gallerie-btnSuivant"><img src="images/icone-flecheADroite.png" alt=""></button>
+                                <div class="gallerie-puces">
+                                    <p><span class="gallerie-puceActive">&bull;</span><span class="gallerie-puceNotActive">&bull;</span></p>
+                                </div>
+                            </div>
+                            <div class="gallerie-images">
+                                <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
+                                <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
+                                <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
+                                <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
+                                <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
+                            </div>
+                        </div>
+                </article>
+            <article>
+                
+                    <iframe class="lieuCarte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.2204302574273!2d-17.251173466092016!3d14.832822182955692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a1d3ad0a78f1%3A0x97788f5f78d6b5d9!2sBaobab%20du%20lac%20rose!5e0!3m2!1sfr!2sfr!4v1696794223556!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            </section>
+            <section id="reserver">
+            <h1>Réserver</h1>
+            <form method="get" action="">
+    
+                <div class="elementFormulaire">
+                    <!-- *nom -->
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex : Paul">
+                </div>
+    
+                <div class="elementFormulaire">
+                    <!-- *nombre de personnes -->
+                    <label for="nombrePersonnes">Combien serez-vous ?</label>
+                    <input type="number" name="nombrePersonnes" id="nombrePersonnes">
+                </div>
+    
+                <div class="elementFormulaire">
+                    <!-- *date d'arrivée -->
+                    <label for="dateArrivee">Date d'arrivée</label>
+                    <input type="date" name="dateArrivee" id="dateArrivee">
+                </div>
+    
+                <div class="elementFormulaire">
+                    <!-- *date de départ -->
+                    <label for="dateDepart">Date de départ</label>
+                    <input type="date" name="dateDepart" id="dateDepart">
+                </div>
+    
+                <div class="elementFormulaire">
+                    <!-- *remarques -->
+                    <label for="remarques">Remarques éventuelles</label>
+                    <textarea id="remarques" name="remarques" cols="30" rows="10"></textarea>
+                </div>
+    
+                <div class="elementFormulaire">
+                    <!-- *adresse mail -->
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="elementFormulaire"><input type="submit" value="Envoyer"></div>
+            </form>
+            </section>
+            <section id="prix"class="section-prix">
+                <h1>Tarifs</h1>
+                <table>
+                    <thead>
+                        <td></td>
+                        <td>Prix</td>
+                    </thead>
+                    <tr>
+                        <td>Chambre</td>
+                        <td>50 000FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>Supplément climatisation</td>
+                        <td>5 000FCFA</td>
+                    </tr>
+                </table>
+            </section>
+    </main>
+    <footer>
+    
         <div>
-            <img src="images/logos/facebook-icon.png" alt="logo facebook">
+            <img src="images/logos/tel-icon.png" alt="logo tel"> (00)221 77 562 30 07
         </div>
-    </a>
-    <a href="">
-        <div>
-            <img src="images/logos/airbnb-icon.png" alt="logo airbnb">
-        </div>
-    </a>
-</footer>
-</html>
+    
+        <a href="">
+            <div>
+                <img src="images/logos/facebook-icon.png" alt="logo facebook">
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <img src="images/logos/airbnb-icon.png" alt="logo airbnb">
+            </div>
+        </a>
+    </footer>
+</body>
+</body>
+    </html>
