@@ -29,6 +29,11 @@ a{
 @mixin arrondi_leger{
     border-radius:10px;
 }
+@mixin small-screen{
+    @media screen and (max-width:800px){
+        @content;
+    }
+}
 //=======================//
 //                       //
 //  style de l'en tête   //
@@ -41,6 +46,9 @@ header {
     background-image:url("images/banniere.jpg");
     background-position:center top 900px;
     margin-bottom:30px;
+    @include small-screen{
+        flex-wrap:wrap;
+    }
 }
 header h1{
     padding:20px;
@@ -58,6 +66,10 @@ header h1{
     }
     .menu__btn:hover{
         background-color:burlywood;
+    }
+    @include small-screen{
+        // flex-direction:column;
+        display:none;
     }
 }
 .logoPrincipal{
@@ -89,6 +101,9 @@ section{
     }
     &__ligne{
         @include flex-ligne;
+        @include small-screen{
+            flex-direction:column;
+        }
     }
 }
 main{
@@ -101,6 +116,10 @@ main{
     &__ligne{
         @include flex-ligne;
         justify-content:flex-start;
+        @include small-screen{
+            flex-direction:column;
+            align-items:flex-start;
+        }
     }
     &__element{
         display:flex;
