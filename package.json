@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.29.3",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }
