@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   --color-1:#F6BD60;
@@ -9,7 +10,13 @@ body {
   --color-4:#84A59D;
   --color-5:#F28482;
   /* background:linear-gradient(90deg,#fad1fa,#fbc7d4); */
-  background-color: var(--color-2); }
+  background-color: var(--color-2);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
 
 header {
   display: flex;
@@ -20,62 +27,186 @@ header {
   padding: 20px;
   background-image: url("images/banniere.jpg");
   background-position: center top 900px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 header h1 {
   padding: 20px;
-  border-radius: 5px;
-  background-color: var(--color-1); }
+  border-radius: 10px;
+  background-color: var(--color-1);
+}
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px; }
-  .menu .menu__btn {
-    /*margin:30px;*/
-    background-color: var(--color-1);
-    padding: 10px;
-    border-radius: 5px; }
-  .menu .menu__btn:hover {
-    background-color: burlywood; }
+  gap: 10px;
+}
+.menu .menu__btn {
+  /*margin:30px;*/
+  background-color: var(--color-1);
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu .menu__btn:hover {
+  background-color: burlywood;
+}
 
 .logoPrincipal {
   height: 100px;
   width: 100px;
   background-color: var(--color-1);
-  border-radius: 5px; }
-  .logoPrincipal__img {
-    width: 100%;
-    height: 100%; }
+  border-radius: 10px;
+}
+.logoPrincipal__img {
+  width: 100%;
+  height: 100%;
+}
 
 section {
   padding: 20px;
   margin-bottom: 20px;
   background-color: var(--color-3);
-  border-radius: 5px; }
+  border-radius: 10px;
+}
 
-.sectionIntroduction {
+.sectionIntroduction__img {
+  width: 50%;
+  border-radius: 10px;
+}
+.sectionIntroduction__ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.form__ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form__element {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.form__element input, .form__element textarea {
+  border-radius: 10px;
+  font-size: 1em;
+}
+.form__element input {
+  height: 2.5em;
+}
+.form__element input[type=submit] {
+  width: 100px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: var(--color-4);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.sectionPrix table {
+  margin: auto;
+  border-spacing: 5px;
+}
+.sectionPrix td {
+  padding: 30px;
+  background-color: var(--color-5);
+  border-radius: 10px;
+}
+
+.lieuCarte {
+  margin: auto;
+  display: block;
+}
+
+.gallerie {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.gallerie__boutons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; }
-  .sectionIntroduction__img {
-    width: 50%;
-    border-radius: 5px; }
-  .sectionIntroduction__article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-p {
-  /* padding:10px; */ }
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.gallerie__images {
+  z-index: 0;
+  width: 100%;
+}
+.gallerie__images--hidden {
+  display: none;
+}
+.gallerie__images--show {
+  display: initial;
+}
+.gallerie__puces {
+  align-self: flex-end;
+  order: 2;
+  background-color: var(--color-5);
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.gallerie__puces--Active {
+  color: white;
+}
+.gallerie__puces--NotActive {
+  color: black;
+}
+.gallerie__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--color-5);
+}
+.gallerie__btn img {
+  width: 100%;
+  height: 100%;
+}
+.gallerie__btn--Precedant {
+  order: 1;
+}
+.gallerie__btn--Suivant {
+  order: 3;
+}
+.gallerie__btn:hover {
+  backdrop-filter: brightness(180%);
+  transform-origin: center;
+  transform: scale(1.1, 1.1);
+}
+.gallerie__btn:active {
+  backdrop-filter: brightness(100%);
+  transform-origin: center;
+  transform: scale(1, 1);
+}
+.gallerie__btn:focus {
+  outline: none;
+}
 
 footer {
   background-color: var(--color-1);
@@ -84,87 +215,5 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px; }
-
-main {
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  border-radius: 5px; }
-
-.elementFormulaire {
-  display: flex;
-  flex-direction: column; }
-
-h1 {
-  margin-bottom: 15px;
-  text-align: center; }
-
-.sectionPrix table {
-  margin: auto;
-  border-spacing: 5px; }
-
-.sectionPrix td {
-  padding: 30px;
-  background-color: var(--color-5);
-  border-radius: 5px; }
-
-.lieuCarte {
-  margin: auto;
-  display: block; }
-
-.gallerie {
-  width: 70%;
-  margin: auto;
-  position: relative; }
-  .gallerie__boutons {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    width: 100%;
-    height: 100%; }
-  .gallerie__images {
-    z-index: 0;
-    width: 100%; }
-    .gallerie__images--hidden {
-      display: none; }
-    .gallerie__images--show {
-      display: initial; }
-  .gallerie__puces {
-    align-self: flex-end;
-    order: 2;
-    background-color: var(--color-5);
-    padding: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 10px;
-    border-radius: 20px; }
-    .gallerie__puces--Active {
-      color: white; }
-    .gallerie__puces--NotActive {
-      color: black; }
-  .gallerie__btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: var(--color-5); }
-    .gallerie__btn img {
-      width: 100%;
-      height: 100%; }
-    .gallerie__btn--Precedant {
-      order: 1; }
-    .gallerie__btn--Suivant {
-      order: 3; }
-    .gallerie__btn:hover {
-      backdrop-filter: brightness(180%);
-      transform-origin: center;
-      transform: scale(1.1, 1.1); }
-    .gallerie__btn:active {
-      backdrop-filter: brightness(100%);
-      transform-origin: center;
-      transform: scale(1, 1); }
-    .gallerie__btn:focus {
-      outline: none; }
+  gap: 10px;
+}

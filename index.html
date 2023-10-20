@@ -1,4 +1,7 @@
 <!--TODO-LIST
+*rendre le site responsive
+*reprendre le style du formulaire
+*reprendre le style des titres
 -->
 <!DOCTYPE html>
 <html lang="fr">
@@ -45,29 +48,29 @@
     <main>
         <section class="sectionIntroduction">
             
-                    <article class="sectionIntroduction__article">
+            <article >
                         <h1>Introduction</h1>
-                    </article>
-            <article class="sectionIntroduction__article">
-                <div>
-                    <p>
-                        Situé à 200 mètres du rac rose et à 2 kilometres de
-                        l'océan, Franck vous acceuille dans un cadre unique au milieu
-                        d'un verger à l'ombre d'un magnifique baobab estimé
-                        à 800 ans. <br>
-                       La chambre est équipée d' un lit double de 160x200. Un 
-                        ventilateur y est à disposition. La climatisation vous 
-                        est proposée en supplément. <br>
-                        Le site est idéal pour les voyageurs souhaitant explorer
-                        la presqu'ile du cap vert.<br>
-                     
-                        Pour plus d'informations, téléphonnez au : 221 77 562 30  07
-                    </p>
+                <div class="sectionIntroduction__ligne">
+                    <div>
+                        <p>
+                            Situé à 200 mètres du rac rose et à 2 kilometres de
+                            l'océan, Franck vous acceuille dans un cadre unique au milieu
+                            d'un verger à l'ombre d'un magnifique baobab estimé
+                            à 800 ans. <br>
+                           La chambre est équipée d' un lit double de 160x200. Un 
+                            ventilateur y est à disposition. La climatisation vous 
+                            est proposée en supplément. <br>
+                            Le site est idéal pour les voyageurs souhaitant explorer
+                            la presqu'ile du cap vert.<br>
+                         
+                            Pour plus d'informations, téléphonnez au : 221 77 562 30  07
+                        </p>
+                    </div>
+                    <img src="images/baobab-1.jpg" alt="photo du baobab vu depuis la terrasse du logement" class="sectionIntroduction__img">
                 </div>
-                <img src="images/baobab-1.jpg" alt="photo du baobab vu depuis la terrasse du logement" class="sectionIntroduction__img">
             </article>
                 
-            <article class="sectionIntroduction__article">
+            <article class="sectionIntroduction__ligne">
                 <img src="images/sdb-1.jpg" alt="photo de la salle de bain du logement" class="sectionIntroduction__img">
                 <p>
                 l'appartement dispose d'une salle de bains douche à l'
@@ -106,42 +109,44 @@
             <h1>Réserver</h1>
             <form method="get" action="">
     
-                <div class="elementFormulaire">
+                <div class="form__element">
                     <!-- *nom -->
                     <label for="nom">Votre nom</label>
                     <input type="text" name="nom" id="nom" placeholder="Ex : Paul">
                 </div>
     
-                <div class="elementFormulaire">
+    
+                <div class="form__ligne">
+                <div class="form__element">
                     <!-- *nombre de personnes -->
                     <label for="nombrePersonnes">Combien serez-vous ?</label>
                     <input type="number" name="nombrePersonnes" id="nombrePersonnes">
                 </div>
-    
-                <div class="elementFormulaire">
-                    <!-- *date d'arrivée -->
-                    <label for="dateArrivee">Date d'arrivée</label>
-                    <input type="date" name="dateArrivee" id="dateArrivee">
+                    <div class="form__element">
+                        <!-- *date d'arrivée -->
+                        <label for="dateArrivee">Date d'arrivée</label>
+                        <input type="date" name="dateArrivee" id="dateArrivee">
+                    </div>
+                    
+                    <div class="form__element">
+                        <!-- *date de départ -->
+                        <label for="dateDepart">Date de départ</label>
+                        <input type="date" name="dateDepart" id="dateDepart">
+                    </div>
                 </div>
     
-                <div class="elementFormulaire">
-                    <!-- *date de départ -->
-                    <label for="dateDepart">Date de départ</label>
-                    <input type="date" name="dateDepart" id="dateDepart">
-                </div>
-    
-                <div class="elementFormulaire">
+                <div class="form__element">
                     <!-- *remarques -->
                     <label for="remarques">Remarques éventuelles</label>
                     <textarea id="remarques" name="remarques" cols="30" rows="10"></textarea>
                 </div>
     
-                <div class="elementFormulaire">
+                <div class="form__element">
                     <!-- *adresse mail -->
                     <label for="email">Votre adresse email</label>
                     <input type="email" name="email" id="email" required>
                 </div>
-                <div class="elementFormulaire"><input type="submit" value="Envoyer"></div>
+                <div class="form__element form__element--submit"><input type="submit" value="Envoyer"></div>
             </form>
             </section>
             <section id="prix"class="sectionPrix">
