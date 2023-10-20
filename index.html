@@ -15,28 +15,28 @@
     <header>
         <a href="index.html">
             <div class="logoPrincipal">
-            <img src="images/logos/baobab-logo.png" alt="logo baobab">
+            <img src="images/logos/baobab-logo.png" alt="logo baobab" class="logoPrincipal logoPrincipal__img">
             </div>
         </a>
         <h1>Le Baobab du lac</h1>
-        <nav>
+        <nav class="menu">
             <a href="index.html">
-                <div class="elementMenu">
+                <div class="menu menu__btn">
                     Accueil
                 </div>
             </a>
             <a href="#lieu">
-                <div class="elementMenu">
+                <div class="menu menu__btn">
                     Le lieu
                 </div>
             </a>
             <a href="#prix">
-                <div class="elementMenu">
+                <div class="menu menu__btn">
                     Tarifs
                 </div>
             </a>
             <a href="#prix">
-                <div class="elementMenu">
+                <div class="menu menu__btn">
                     Réserver
                 </div>
             </a>
@@ -77,24 +77,24 @@
                 </p>
             </article>
         </section>
-            <section id="lieu">
+            <section id="lieu" class="sectionLieu">
                 <article>
                     <h1>Le lieu</h1>
                         <div class="gallerie">
-                            <div class="gallerie-boutons">
-                                <button class="gallerie-btn gallerie-btnPrecedant"><img src="images/icone-flecheAGauche.png" alt=""></button>
-                                <button class="gallerie-btn gallerie-btnSuivant"><img src="images/icone-flecheADroite.png" alt=""></button>
-                                <div class="gallerie-puces">
-                                    <p><span class="gallerie-puceActive">&bull;</span><span class="gallerie-puceNotActive">&bull;</span></p>
+                            <div class="gallerie__boutons">
+                                <button class="gallerie__btn gallerie__btn--Precedant"><img src="images/icone-flecheAGauche.png" alt=""></button>
+                                <button class="gallerie__btn gallerie__btn--Suivant"><img src="images/icone-flecheADroite.png" alt=""></button>
+                                <div class="gallerie__puces">
+                                    <p><span class="gallerie__puces--Active">&bull;</span><span class="gallerie__puces--NotActive">&bull;</span></p>
                                 </div>
                             </div>
-                            <div class="gallerie-images">
-                                <img src="images/gallerie/image1.jpg" alt="" class="imageGallerie">
-                                <img src="images/gallerie/image2.jpg" alt="" class="imageGallerie">
-                                <img src="images/gallerie/image3.jpg" alt="" class="imageGallerie">
-                                <img src="images/gallerie/image4.jpg" alt="" class="imageGallerie">
-                                <img src="images/gallerie/image5.jpg" alt="" class="imageGallerie">
-                            </div>
+                            <!-- <div class="gallerie__images"> -->
+                                <img src="images/gallerie/image1.jpg" alt="" class="gallerie__images">
+                                <img src="images/gallerie/image2.jpg" alt="" class="gallerie__images">
+                                <img src="images/gallerie/image3.jpg" alt="" class="gallerie__images">
+                                <img src="images/gallerie/image4.jpg" alt="" class="gallerie__images">
+                                <img src="images/gallerie/image5.jpg" alt="" class="gallerie__images">
+                            <!-- </div> -->
                         </div>
                 </article>
             <article>
@@ -102,7 +102,7 @@
                     <iframe class="lieuCarte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.2204302574273!2d-17.251173466092016!3d14.832822182955692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a1d3ad0a78f1%3A0x97788f5f78d6b5d9!2sBaobab%20du%20lac%20rose!5e0!3m2!1sfr!2sfr!4v1696794223556!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
             </section>
-            <section id="reserver">
+            <section id="reserver" class="sectionReserver">
             <h1>Réserver</h1>
             <form method="get" action="">
     
@@ -144,7 +144,7 @@
                 <div class="elementFormulaire"><input type="submit" value="Envoyer"></div>
             </form>
             </section>
-            <section id="prix"class="section-prix">
+            <section id="prix"class="sectionPrix">
                 <h1>Tarifs</h1>
                 <table>
                     <thead>

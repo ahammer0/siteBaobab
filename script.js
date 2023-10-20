@@ -1,26 +1,26 @@
-const btnSuivant=document.querySelector(".gallerie-btnSuivant");
-const btnPrecedant=document.querySelector(".gallerie-btnPrecedant");
+const btnSuivant=document.querySelector(".gallerie__btn--Suivant");
+const btnPrecedant=document.querySelector(".gallerie__btn--Precedant");
 
 
-const photos=document.querySelectorAll(".imageGallerie");
+const photos=document.querySelectorAll(".gallerie__images");
 let elementAffiche=0;
 function actualiserAffichage(noElement, photos){
-    const divPuces=document.querySelector(".gallerie-puces");
+    const divPuces=document.querySelector(".gallerie__puces");
     divPuces.innerHTML="";
 
     for (let i=0; i<photos.length;i++){
         if (i===noElement){
-            photos[i].classList.remove("gallerie-hidden");
+            photos[i].classList.remove("gallerie__images--hidden");
             const span=document.createElement("span");
             span.innerText="\u2022";
-            span.classList.add("gallerie-puceActive");
+            span.classList.add("gallerie__puces--Active");
             divPuces.appendChild(span);
         }
         else{
-            photos[i].classList.add("gallerie-hidden");
+            photos[i].classList.add("gallerie__images--hidden");
             const span=document.createElement("span");
             span.innerText="\u2022";
-            span.classList.add("gallerie-puceNotActive");
+            span.classList.add("gallerie__puces--NotActive");
             divPuces.appendChild(span);
         }
     }
