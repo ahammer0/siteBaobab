@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   --color-5:#F28482;
   /* background:linear-gradient(90deg,#fad1fa,#fbc7d4); */
   background-color: var(--color-2);
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -126,6 +128,8 @@ main {
 .form__element input, .form__element textarea {
   border-radius: 10px;
   font-size: 1em;
+  border: 1px solid black;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
 }
 .form__element input {
   height: 2.5em;
@@ -141,6 +145,7 @@ h1 {
   background-color: var(--color-4);
   border-radius: 50px;
   padding: 10px;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .sectionPrix table {
