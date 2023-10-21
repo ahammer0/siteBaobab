@@ -173,7 +173,7 @@ h1{
     display:block;
 }
 .gallerie{
-    width:70%;
+    max-width:80%;
     margin:auto;
     position:relative;
     &__boutons{
@@ -243,6 +243,10 @@ h1{
             outline:none;
         }
     }
+}
+.carteGoogle{
+    max-width:80%;
+    margin:auto;
 }
 footer{
     background-color:var(--color-1);
