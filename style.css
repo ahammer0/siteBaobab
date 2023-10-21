@@ -164,9 +164,14 @@ h1 {
 }
 
 .gallerie {
-  width: 70%;
+  max-width: 80%;
   margin: auto;
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .gallerie {
+    max-width: 100%;
+  }
 }
 .gallerie__boutons {
   position: absolute;
@@ -232,6 +237,16 @@ h1 {
 }
 .gallerie__btn:focus {
   outline: none;
+}
+
+.carteGoogle {
+  max-width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .carteGoogle {
+    max-width: 100%;
+  }
 }
 
 footer {

@@ -173,9 +173,12 @@ h1{
     display:block;
 }
 .gallerie{
-    width:70%;
+    max-width:80%;
     margin:auto;
     position:relative;
+    @include small-screen{
+        max-width:100%;
+    }
     &__boutons{
         position:absolute;
         display:flex;
@@ -242,6 +245,13 @@ h1{
         &:focus{
             outline:none;
         }
+    }
+}
+.carteGoogle{
+    max-width:80%;
+    margin:auto;
+    @include small-screen{
+        max-width:100%;
     }
 }
 footer{
