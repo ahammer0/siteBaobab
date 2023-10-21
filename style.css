@@ -173,6 +173,11 @@ h1 {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 800px) {
+  .gallerie {
+    max-width: 100%;
+  }
+}
 .gallerie__boutons {
   position: absolute;
   display: flex;
