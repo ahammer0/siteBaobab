@@ -185,5 +185,51 @@
             </div>
         </a>
     </footer>
+    <div class="popup">
+        <div class="popup popup__element">
+            <h1>Réserver</h1>
+            <form method="get" action="">
+    
+                <div class="form__element">
+                    <!-- *nom -->
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex : Paul">
+                </div>
+    
+    
+                <div class="form__ligne">
+                <div class="form__element">
+                    <!-- *nombre de personnes -->
+                    <label for="nombrePersonnes">Combien serez-vous ?</label>
+                    <input type="number" name="nombrePersonnes" id="nombrePersonnes">
+                </div>
+                    <div class="form__element">
+                        <!-- *date d'arrivée -->
+                        <label for="dateArrivee">Date d'arrivée</label>
+                        <input type="date" name="dateArrivee" id="dateArrivee">
+                    </div>
+                    
+                    <div class="form__element">
+                        <!-- *date de départ -->
+                        <label for="dateDepart">Date de départ</label>
+                        <input type="date" name="dateDepart" id="dateDepart">
+                    </div>
+                </div>
+    
+                <div class="form__element">
+                    <!-- *remarques -->
+                    <label for="remarques">Remarques éventuelles</label>
+                    <textarea id="remarques" name="remarques" cols="30" rows="10"></textarea>
+                </div>
+    
+                <div class="form__element">
+                    <!-- *adresse mail -->
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form__element form__element--submit"><input type="submit" value="Envoyer"></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

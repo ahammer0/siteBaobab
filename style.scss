@@ -266,3 +266,29 @@ footer{
     align-items:center;
     gap:10px;
 }
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    backdrop-filter:blur(2px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:10;
+    .popup__element{
+        position:relative;
+        display:unset;
+        width:60%;
+        // height:50%;
+        background-color:var(--color-1);
+        @include arrondi_leger;
+        padding:10px;
+        @include box_shadow;
+        
+    }
+    &__element--hidden{
+        display:none;
+    }
+}
